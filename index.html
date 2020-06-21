@@ -53,13 +53,13 @@
             <div id="collapsingNavbar" class="collapse navbar-toggleable-custom">
                 <ul class="nav navbar-nav navbar-nav-transparent float-right">
                     <li class="nav-item nav-item-toggable">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#landioCarousel">Home</a>
                     </li>
                     <li class="nav-item nav-item-toggable">
                         <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item nav-item-toggable">
-                        <a class="nav-link" href="#about">Our Business</a>
+                        <a class="nav-link" href="#company">Our Business</a>
                     </li>
                     <!-- <li class="nav-item dropdown nav-item-toggable hidden-md-down textselect-off">
                         <a class="nav-link nav-link dropdown-toggle" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Our Business <span class="icon-caret-down"></span></a>
@@ -72,10 +72,13 @@
                         </div>
                     </li> -->
                     <li class="nav-item nav-item-toggable">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item nav-item-toggable">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item nav-item-toggable">
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                     <li class="nav-item nav-item-toggable hidden-md-up">
                         <form class="navbar-form">
@@ -95,26 +98,21 @@
                     </li>
                     <li class="nav-item dropdown hidden-md-down textselect-off">
                         <a class="nav-link dropdown-toggle nav-dropdown-user" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="./assets/img/face5.jpg" height="40" width="40" alt="Avatar" class="rounded-circle"> <span class="icon-caret-down"></span>
+                            <img src="./assets/img/team/2.jpg" height="40" width="40" alt="Avatar" class="rounded-circle"> <span class="icon-caret-down"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-user dropdown-menu-animated" aria-labelledby="dropdownMenu2">
                             <div class="media">
                                 <div class="media-left">
-                                    <img src="./assets/img/face5.jpg" height="60" width="60" alt="Avatar" class="rounded-circle d-flex mr-2">
+                                    <img src="./assets/img/team/2.jpg" height="60" width="60" alt="Avatar" class="rounded-circle d-flex mr-2">
                                 </div>
                                 <div class="media-body align-self-center">
                                     <h5 class="mt-0 mb-1">Uyum Maruyum</h5>
                                     <h6 class="mb-0">zumrotus@triputra.com</h6>
                                 </div>
                             </div>
-                            <a href="#" class="dropdown-item text-uppercase">View posts</a>
-                            <a href="#" class="dropdown-item text-uppercase">Manage groups</a>
-                            <a href="#" class="dropdown-item text-uppercase">Subscription &amp; billing</a>
+                            <a href="#" class="dropdown-item text-uppercase">Manage Post</a>
+                            <a href="#" class="dropdown-item text-uppercase">Manage Product</a>
                             <a href="#" class="dropdown-item text-uppercase text-muted">Log out</a>
-                            <a href="#" class="btn-circle has-gradient float-right">
-                                <span class="sr-only">Edit</span>
-                                <span class="icon-edit"></span>
-                            </a>
                         </div>
                     </li>
                 </ul>
@@ -324,10 +322,10 @@
     </section>
 
 
-    <!-- Comapany 
+    <!-- Company 
     ================================================== -->
 
-    <section class="section-pricing bg-light text-center">
+    <section class="section-pricing bg-light text-center" id="company">
         <div class="container">
             <h3 class="card-title">Our Company Group</h3>
             <div class="row py-5">
@@ -402,22 +400,23 @@
     <!-- Gallery
     ==================================================-->
     <!-- Grid row -->
-    <section class="section-feature bg-light">
+    <section class="section-feature bg-light text-center" id="gallery">
         <div class="row">
+            <div class="container">
+                <h3 class="card-title">Gallery</h3>
+                <!-- Grid column -->
+                <div class="col-md-12 d-flex justify-content-center mb-5">
 
-            <!-- Grid column -->
-            <div class="col-md-12 d-flex justify-content-center mb-5">
-
-                <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="all">All</button>
-                <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="1">Bright</button>
-                <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="2">Sadeea</button>
-                <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="3">Golden</button>
-                <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="4">Uncle
+                    <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="all">All</button>
+                    <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="1">Bright</button>
+                    <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="2">Sadeea</button>
+                    <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="3">Golden</button>
+                    <button type="button" class="btn btn-outline-warning waves-effect filter" data-rel="4">Uncle
                     Choipan</button>
 
+                </div>
+                <!-- Grid column -->
             </div>
-            <!-- Grid column -->
-
         </div>
         <!-- Grid row -->
 
@@ -494,7 +493,7 @@
     <!-- Team
     ================================================== -->
 
-    <section class="section-testimonials text-center bg-dark">
+    <section class="section-testimonials text-center bg-dark" id="team">
         <div class="container">
             <h3 class="card-title">Our Amazing Team</h3>
             <div id="carousel-testimonials" class="carousel slide" data-ride="carousel" data-interval="0">
@@ -659,7 +658,7 @@
     <!-- Sign Up
     ================================================== -->
 
-    <section class="section-signup bg-light">
+    <section class="section-signup bg-light" id="contact">
         <div class="container">
             <h3 class="card-title text-center mb-5">Contact Us</h3>
             <form>
@@ -688,8 +687,7 @@
 
                     <div class="col-md-12 col-xl-12">
                         <div class="form-group">
-                            <button type="submit" class="btn btn-warning btn-lg btn-block btn-pill">Sign up for
-                                free!</button>
+                            <button type="submit" class="btn btn-warning btn-lg btn-block btn-pill">Send Your Email</button>
                         </div>
                     </div>
 
@@ -709,14 +707,14 @@
     <!-- Footer
     ================================================== -->
 
-    <footer class="section-footer bg-dark" role="contentinfo">
+    <footer class="section-footer bg-dark text-center" role="contentinfo">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-lg-5">
-                    <div class="media flex-column flex-md-row">
+            <div class="row ">
+                <div class="col-md-6 col-lg-12">
+                    <div class="media flex-column flex-md-row mx-auto d-block">
                         <!--<span class="d-flex align-self-center align-self-md-start icon-logo"></span>-->
-                        <img src="assets/img/logo.png" alt="">
-                        <small class="media-body text-center text-md-left"><span class="sr-only mb-5"></span>
+                        <img class="" src="assets/img/logo.png" alt="">
+                        <small class="media-body text-center text-md-center"><span class="sr-only mb-5"></span>
                             &copy; Triputra Jaya Internationals <br>
                         </small>
                     </div>
@@ -729,7 +727,7 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="ui-elements.html">UI Kit</a></li>
                         <li class="nav-item"><a class="nav-link" href="https://github.com/tatygrassini/landio-html" target="_blank" rel="nofollow">GitHub</a></li>
-                        <li class="nav-item"><a class="nav-link scroll-top" href="#totop">Back to top <span
+                        <li class="nav-item"><a class="nav-link scroll-top" href="#landioCarousel">Back to top <span
                                     class="icon-caret-up"></span></a></li>
                     </ul>
                 </div>
@@ -747,10 +745,22 @@
             </div>
         </div>
     </div>
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="./assets/js/landio.min.js"></script>
+    <script>
+$(function() {
+    $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 2000);
+            return false;
+        }
+    });
+});
+</script>
 </body>
 
 </html>
