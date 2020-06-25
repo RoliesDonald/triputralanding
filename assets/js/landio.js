@@ -7,7 +7,6 @@
 //=require libs/jquery.waypoints.min.js
 //=require libs/video.js
 //=require libs/jquery.vimeo.api.min.js
-
 //=require libs/Chart.min.js
 
 (function($) {
@@ -123,7 +122,7 @@
         $('.scroll-top').on('click', function() {
             $('html, body').animate({
                 scrollTop: 0
-            }, 5000);
+            }, 4000);
             return false;
         });
     }
@@ -159,20 +158,6 @@
 
         });
     }
-
-    // Gallery
-    // $(function() {
-    //     var selectedClass = "";
-    //     $(".filter").click(function() {
-    //         selectedClass = $(this).attr("data-rel");
-    //         $("#gallery").fadeTo(100, 0.1);
-    //         $("#gallery div").not("." + selectedClass).fadeOut().removeClass('animation');
-    //         setTimeout(function() {
-    //             $("." + selectedClass).fadeIn().addClass('animation');
-    //             $("#gallery").fadeTo(300, 1);
-    //         }, 300);
-    //     });
-    // });
 
 
 
