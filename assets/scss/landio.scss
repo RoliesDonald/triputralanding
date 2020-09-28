@@ -322,6 +322,11 @@ $font-family-sans-serif-custom: 'Lato', sans-serif !default;
   margin: 0;
 }
 
+.navbar-brand small{
+  display:inline-block;
+  font-size:12px;
+}
+
 .icon-logo { font-size: 45px; }
 
 .navbar-nav .active > .nav-link {
