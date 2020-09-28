@@ -40,7 +40,8 @@ h6, .h6 { font-size: $h6-font-size; }
   font-size: $display1-size;
   font-weight: $font-weight-bold;
   line-height: $display-line-height;
-  color: $black;
+  text-shadow: 0 0 3px #ffffff;
+  color: rgba(255, 155, 0, 0.8);
 }
 .display-4 {
   font-size: $display4-size;

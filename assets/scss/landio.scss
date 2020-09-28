@@ -937,7 +937,7 @@ h3 {
     float: none;
 
     @include media-breakpoint-up(md) {
-      margin-bottom: 0;
+      margin-bottom: 3rem;
     }
   }
 
@@ -963,6 +963,18 @@ h3 {
     border-radius: 50%;
   }
 
+  .span2 {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    font-size: 2.125rem;
+    line-height: 2.5;
+    text-align: center;
+    border: 5px solid $danger;
+    border-radius: 50%;
+  }
+
   .icon-heart {
     font-size: 1.85rem;
     line-height: 2.75;
@@ -970,8 +982,8 @@ h3 {
 }
 
 .card-title {
-  margin-bottom: 5px;
-  font-size: 2.15rem;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.1666;
 }
@@ -1178,8 +1190,9 @@ figure { position: relative; }
   border: 2px solid map-get($theme-colors, warning);
 
   @include media-breakpoint-up(md) {
-    margin-right: -30px;
-    margin-left: -30px;
+    margin-right: -1px;
+    margin-left: -1px;
+    margin-bottom: 20px;
   }
 
   .card-header {
@@ -1215,6 +1228,113 @@ figure { position: relative; }
   @include media-breakpoint-up(md) {
     padding-bottom: 2.5rem;
   }
+  
+
+  .blockquote {
+    margin: 0 auto 2rem;
+    border-left: 0 none;
+
+    @include media-breakpoint-up(md) {
+      max-width: 47rem;
+      margin-bottom: 4.5rem;
+    }
+
+    > img {
+      margin-bottom: 1.5625rem;
+      border: 4px solid #fff;
+    }
+
+    p {
+      margin-bottom: .9375rem;
+      font-weight: 400;
+      line-height: 1.464;
+
+      &::before {
+        content: '\201c';
+      }
+
+      &::after {
+        content: '\201d';
+      }
+    }
+
+    footer {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.1875;
+      color: #fff;
+
+      &::before {
+        content: '';
+      }
+
+      &::after {
+        display: block;
+        width: 2.5rem;
+        height: 1px;
+        margin: .625rem auto 0;
+        content: '';
+        background-color: rgba(255, 255, 255, .25);
+      }
+    }
+  }
+
+  .carousel-indicators {
+    position: inherit;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    margin: 0;
+
+    img {
+      width: 45px;
+      height: 45px;
+      margin: 5.5px auto 0;
+      border: 3px solid #fff;
+      transition: all .1s ease-in-out;
+    }
+
+    li {
+      width: 60px;
+      height: 60px;
+      margin: 0;
+      text-indent: inherit;
+      border: 0;
+      border-radius: 0;
+      background-color: transparent;
+      opacity: .5;
+      transition: opacity .2s;
+      cursor: pointer;
+
+      &:hover { opacity: .9; }
+
+      &.active {
+        margin: 0;
+        background-color: transparent;
+        opacity: 1;
+
+        img {
+          width: 56px;
+          height: 56px;
+          margin-top: 0;
+          border: 4px solid #fff;
+        }
+      }
+    }
+  }
+}
+
+.section-testimonials2 {
+  padding-bottom: 3rem;
+  background: $gray-100 no-repeat center bottom;
+  background-size: cover;
+
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 2.5rem;
+    padding-top: 3rem;
+  }
+  
 
   .blockquote {
     margin: 0 auto 2rem;
