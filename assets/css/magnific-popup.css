@@ -289,7 +289,11 @@ img.mfp-img {
   line-height: 18px;
   color: #F3F3F3;
   word-wrap: break-word;
-  padding-right: 36px; }
+  padding-right: 36px; 
+font-family: Raleway;
+font-weight: 700;
+text-align: justify;
+}
 
 .mfp-image-holder .mfp-content {
   max-width: 100%; }

@@ -9524,12 +9524,14 @@ figure {
   color: #fff; }
 
 .instaimg img {
+  float: left;
   margin-bottom: 30px;
-  max-width: 100%;
-  height: 200px;
-  object-fit: contain; }
+  width: 100%;
+  height: 30vw;
+  object-fit: cover; }
 
 .instaimg img:hover {
+  background-color: yellow;
   opacity: 0.8;
   -moz-opacity: 0.8;
   -webkit-opacity: 0.8; }
