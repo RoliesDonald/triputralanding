@@ -8,6 +8,7 @@
 
 -----------------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700");
+@import "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i";
 @font-face {
   font-family: 'icomoon';
   src: url("/fonts/icomoon.eot?-fnljg0");
@@ -9521,3 +9522,14 @@ figure {
 .profile-card-2 i:hover {
   background-color: #f4f5f7;
   color: #fff; }
+
+.instaimg img {
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain; }
+
+.instaimg img:hover {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8; }

@@ -32,6 +32,7 @@
 // --------------------------------------------------
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,500,300,700|Lato:400,700');
+@import "https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i";
 @import 'icomoon';
 
 @import "bootstrap/functions";
@@ -2369,3 +2370,95 @@ padding-right: 1.1rem;
   background-color: $gray-100;
   color:#fff;
 }
+
+.instaimg img{
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+  
+}
+
+.instaimg img:hover {
+  opacity:0.8;
+  -moz-opacity:0.8;
+  -webkit-opacity:0.8;
+  
+}
+// .row .no-gutter {
+// 	margin-left: 0;
+// 	margin-right: 0;
+  
+// 	[class*='col-'] {
+// 		&:not(:first-child) {
+// 			padding-right: 0;
+// 			padding-left: 0;
+// 		}
+// 		&:not(:last-child) {
+// 			padding-right: 0;
+// 			padding-left: 0;
+// 		}
+// 	}
+// }
+// .img-featured-container {
+// 	overflow: hidden;
+// 	position: relative;
+// 	img {
+// 		width: 100%;
+//     min-height:100px;
+//     object-fit: contain;
+// 	}
+// 	.img-backdrop {
+// 		background: linear-gradient(135deg, rgba(38, 163, 255, 0.85), rgba(83, 201, 179, 0.85));
+// 		margin: 0;
+// 		padding: 0;
+// 		width: 100%;
+// 		height: 100%;
+// 		position: absolute;
+// 		z-index: 1;
+// 		opacity: 0;
+// 		transition: all 0.3s ease;
+// 	}
+// 	&:hover {
+// 		>.img-backdrop {
+// 			opacity: 1;
+// 		}
+// 		.description-container {
+// 			opacity: 1;
+// 		}
+// 	}
+// 	.description-container {
+// 		color: #fff;
+// 		font-size: 16px;
+// 		line-height: 1.2;
+// 		padding: 0 30px;
+// 		text-align: center;
+// 		line-height: 20px;
+// 		width: 100%;
+// 		position: absolute;
+// 		top: 50%;
+// 		left: 50%;
+// 		transform: translate(-50%, -50%);
+// 		transform-style: preserve-3d;
+// 		z-index: 2;
+// 		opacity: 0;
+// 		transition: all .2s ease;
+// 		.fa-instagram {
+// 			font-size: 40px;
+// 		}
+// 		p {
+// 			font-weight: 300;
+// 			margin-bottom: 0;
+// 		}
+// 		.caption {
+// 			display: none;
+// 			margin-bottom: 10px;
+// 		}
+// 		.likes {
+// 			margin: 0 5px;
+// 		}
+// 		.comments {
+// 			margin: 0 5px;
+// 		}
+// 	}
+// }
