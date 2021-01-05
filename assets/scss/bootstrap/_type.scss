@@ -37,11 +37,11 @@ h6, .h6 { font-size: $h6-font-size; }
   line-height: $display-line-height;
 }
 .display-3 {
-  font-size: $display1-size;
+  font-size: $display3-size;
   font-weight: $font-weight-bold;
   line-height: $display-line-height;
-  text-shadow: 0 0 3px #ffffff;
-  color: rgba(255, 155, 0, 0.8);
+  text-shadow: 0 0 5px #000000;
+  color: $white;
 }
 .display-4 {
   font-size: $display4-size;

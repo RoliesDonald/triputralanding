@@ -813,7 +813,7 @@ $custom-min-height: 37.5em; // 600
     margin-bottom: 1rem;
   }
 
-  .display-3 { font-size: 2rem; }
+  .display-3 { font-size: 12px;}
 }
 
 h2 {
@@ -2036,6 +2036,10 @@ $linkedin: #0077b5;
   }
 }
 
+.jarak {
+  margin-top: 80px;
+}
+
 // Styling for the timeline section
 .timeline {
   position: relative;
@@ -2048,7 +2052,7 @@ $linkedin: #0077b5;
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    content: '';
+    // content: '';
     background-color: $gray-400;
   }
   > li {
