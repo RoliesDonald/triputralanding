@@ -9,6 +9,7 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 var notify = require("gulp-notify");
+// var runSequence = require('run-sequence');
 
 gulp.task('sass', function() {
     return gulp.src('./assets/scss/landio.scss')
@@ -63,5 +64,11 @@ gulp.task('serve', ['sass', 'js'], function() {
     gulp.watch('./assets/js/landio.js', ['js']);
     gulp.watch('./*.html').on('change', reload);
 });
+
+gulp.task('build', function(cb) {
+    // change this to gulp.series from gulp 4.0 onwards
+    // see https://github.com/OverZealous/run-sequence
+    runSequence('sass', 'compress:css', 'compress:js', 'compress:html', cb);
+  });
 
 gulp.task('default', ['serve']);
